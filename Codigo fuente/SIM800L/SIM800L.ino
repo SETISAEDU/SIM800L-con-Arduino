@@ -113,7 +113,7 @@ void EnviarSMSTEMP()
   {
     Serial1.println("AT+CMGF=1");
     delay(200);
-    Serial1.println("AT+CMGS=\"+50371070549\""); //Numero de telefono destino
+    Serial1.println("AT+CMGS=\"+503********\""); //!Ingrese el numero de telefono destino antes de compilar!
     delay(200);
     Serial1.print("Alerta: Se ha detectado una alta temperatura en su habitacion (Temperatura de 30 C)");
     delay(200);
@@ -132,7 +132,7 @@ void SMSPuerta1_Abierta()
   {
   Serial1.println("AT+CMGF=1");
   delay(200);
-  Serial1.println("AT+CMGS=\"+50371070549\""); 
+  Serial1.println("AT+CMGS=\"+503********\""); 
   delay(200);
   Serial1.print("Alerta: La puerta pricipal de su residencia se ha abierto");
   delay(200);
@@ -151,7 +151,7 @@ void  SMSPuerta1_Cerrada()
   {
   Serial1.println("AT+CMGF=1");
   delay(200);
-  Serial1.println("AT+CMGS=\"+50371070549\""); 
+  Serial1.println("AT+CMGS=\"+503********\""); 
   delay(200);
   Serial1.print("Su residencia esta segura (Puerta principal cerrada)");
   delay(200);
