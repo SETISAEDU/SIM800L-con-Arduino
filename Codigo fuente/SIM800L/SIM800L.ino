@@ -105,6 +105,8 @@ void serialEvent1(){
     Mensaje=Serial1.readStringUntil("\n");
     Serial.println("Nuevo Mensaje:");
     Serial.println(Mensaje);
+  }
+}
     
 //Funcion de alerta sobre alta temperatura por SMS
 void EnviarSMSTEMP()
@@ -162,4 +164,3 @@ void  SMSPuerta1_Cerrada()
   SMS_Closed1 = false;
   }
 }
-
